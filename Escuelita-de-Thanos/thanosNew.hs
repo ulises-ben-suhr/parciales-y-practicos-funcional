@@ -90,5 +90,3 @@ ulises = Personaje "ulises" 24 60 "tierra" ["programacion en Haskell", "usar mjo
 atacar :: Guantelete -> Personaje -> Personaje
 atacar guantelete personajeInicial = foldl (\pers efecto -> efecto pers ) personajeInicial (gemas guantelete)
 
--- PUNTO 6
-
