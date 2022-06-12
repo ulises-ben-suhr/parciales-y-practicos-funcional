@@ -53,8 +53,6 @@ experimentoExitoso experimento bicho =  criterioExito experimento ((flip aplicar
 aplicarPruebas ::  [Transformacion] -> Animal -> Animal
 aplicarPruebas torturas bicho = foldl (\animalito prueba -> prueba $ animalito) bicho torturas
 
-
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 reporte :: [String] -> [Transformacion] -> ([String] -> [String] -> Bool) -> [Animal] -> [Animal]
@@ -77,13 +75,4 @@ hayRepetidos lista = any (\v -> elem v lista)
 
 todosRepetidos :: Eq a => [a] -> [a] -> Bool
 todosRepetidos lista = all (\v -> elem v lista)
-
--- lista1 = ["hola", "como", "estas", "yo", "mas", "o", "menos"]
--- lista2 = ["problema", "mio", "chau"]
--- lista3 = ["yo", "ando", "mejor", "que", "la", "vez", "anterior", "chau"]
--- lista4 = ["nada", "mal"]
--- lista5 = ["nada", "mal"]
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-
 
